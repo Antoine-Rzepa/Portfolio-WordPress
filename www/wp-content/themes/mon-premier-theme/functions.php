@@ -3,8 +3,10 @@
     /**
      * Loading All CSS Stylesheets and Javascript Files.
      */
+    add_theme_support('title-tag');
     function wordpress_scripts_loader()
     {
+
         $theme_version = wp_get_theme()->get('Version');
 
         // 1. Styles.
@@ -22,5 +24,7 @@
             wp_enqueue_script('comment-reply');
         }
     }
+
+
 
     add_action('wp_enqueue_scripts', 'wordpress_scripts_loader');

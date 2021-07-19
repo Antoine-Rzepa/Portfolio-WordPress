@@ -1,7 +1,5 @@
-<?php
+<?php get_header(); ?>
 
-    get_header();
+<h1>ICI MES BIDULES</h1>
 
-    the_content();
-
-    get_footer();
+<?php    get_footer(); ?>
