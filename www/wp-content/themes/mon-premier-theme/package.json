@@ -8,7 +8,9 @@
   "browserslist": [
     "last 2 versions"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.2.0",
     "gulp": "^4.0.2",

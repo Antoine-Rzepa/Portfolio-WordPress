@@ -4,7 +4,7 @@ const path = require( 'path' ),
 module.exports = {
 	context: path.resolve( __dirname, 'assets' ),
 	entry: {
-		main: [ './main.js' ],
+		main: [ './src/main.js' ],
 	},
 	output: {
 		path: path.resolve( __dirname, 'assets/js' ),
