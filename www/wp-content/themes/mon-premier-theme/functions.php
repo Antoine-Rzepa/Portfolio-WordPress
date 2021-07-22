@@ -7,7 +7,7 @@
 
     function my_theme_supports(){
         add_theme_support('title-tag');
-        add_theme_support('post_thumbnails');
+        add_theme_support('post-thumbnails');
         add_theme_support('menus');
         register_nav_menu('header', 'En tête du menu');
         register_nav_menu('footer', 'bas de page');
@@ -40,14 +40,14 @@
         return $attrs;
     }
 
-    function my_theme_init(){
+    function my_theme_init() {
         register_post_type('Modules', [
             'label' => 'Modules',
             'public' => true,
             'menu_position' => 3,
             'menu_icon' => 'dashicons-screenoptions',
             'supports' => ['title', 'editor', 'thumbnail'],
-            'show-in_rest' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
         ]);
         register_post_type('Apprenants', [
@@ -56,7 +56,7 @@
             'menu_position' => 3,
             'menu_icon' => 'dashicons-groups',
             'supports' => ['title', 'editor', 'thumbnail'],
-            'show-in_rest' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
         ]);
     }
@@ -67,10 +67,6 @@
     add_filter('document_title_parts', 'my_theme_document_title_parts');
     add_filter('nav_menu_css_class', 'my_theme_menu_class');
     add_filter('nav_menu_link_attributes', 'my_theme_link_class');
-
-
-
-
 
 
 
