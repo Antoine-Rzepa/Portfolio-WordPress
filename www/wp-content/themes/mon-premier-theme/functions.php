@@ -11,6 +11,8 @@
         add_theme_support('menus');
         register_nav_menu('header', 'En tête du menu');
         register_nav_menu('footer', 'bas de page');
+
+        add_image_size('card-header', 500, 350, true);
     }
 
     function my_theme_register_assets (){
@@ -38,6 +40,28 @@
         return $attrs;
     }
 
+    function my_theme_init(){
+        register_post_type('Modules', [
+            'label' => 'Modules',
+            'public' => true,
+            'menu_position' => 3,
+            'menu_icon' => 'dashicons-screenoptions',
+            'supports' => ['title', 'editor', 'thumbnail'],
+            'show-in_rest' => true,
+            'has_archive' => true,
+        ]);
+        register_post_type('Apprenants', [
+            'label' => 'Apprenants',
+            'public' => true,
+            'menu_position' => 3,
+            'menu_icon' => 'dashicons-groups',
+            'supports' => ['title', 'editor', 'thumbnail'],
+            'show-in_rest' => true,
+            'has_archive' => true,
+        ]);
+    }
+
+    add_action('init', 'my_theme_init');
     add_action('wp_enqueue_scripts', 'my_theme_register_assets');
     add_action('after_setup_theme', 'my_theme_supports');
     add_filter('document_title_parts', 'my_theme_document_title_parts');
