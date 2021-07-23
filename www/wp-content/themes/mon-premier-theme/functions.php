@@ -13,13 +13,12 @@
         register_nav_menu('footer', 'bas de page');
 
         add_image_size('card-header', 500, 350, true);
+        add_image_size('home-header', 1140, 600, true);
     }
 
     function my_theme_register_assets (){
         wp_register_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css');
         wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js');
-//        wp_register_script();
-//        wp_register_script();
         wp_enqueue_style('bootstrap');
         wp_enqueue_script('bootstrap');
     }

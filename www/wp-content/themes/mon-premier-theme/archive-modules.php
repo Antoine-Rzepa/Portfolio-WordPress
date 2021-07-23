@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <div class="container pt-2">
     <h1 class="has-text-align-center">Modules</h1>
 
 <?php if (have_posts()) : ?>

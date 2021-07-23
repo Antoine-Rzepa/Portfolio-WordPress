@@ -1,31 +1,169 @@
 
-
 html {
   min-width: 100%;
   min-height: 100%;
 }
+
 body {
   background: white;
-  //background: radial-gradient(rgba(255, 255, 255, 0.5), rgba(240, 40, 102, 0.8));
   min-width: 100%;
   min-height: 100%;
 }
 
-.container {
-  //background: rgba(240, 40, 102, 1);
-  padding: 0;
+.container-good {
+  width: 100%;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 nav {
-  background: black;
+  background: #262626;
+
+   ul {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+
+    li a {
+      transition: all .5s;
+
+      &:after, &:before {
+        transition: all .5s;
+      }
+
+      &:hover {
+        color: #EF2961 !important;
+      }
+    }
+  }
+
+  &.stroke ul li a {
+    position: relative;
+
+    &:after {
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 0%;
+      content: '.';
+      color: transparent;
+      background: #EF2961;
+      height: 1px;
+    }
+
+    &.hover:after {
+      width: 100%;
+    }
+  }
 }
+
 
 .footer {
-  background: black;
+  background: #262626;
+
+  .nav-footer {
+    a {
+      color: rgba(255, 255, 255, .55);
+
+      &:hover {
+        color: #EF2961;
+      }
+    }
+  }
+
+  .center-icon {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+  }
+
+  svg {
+    fill: white;
+
+    &:hover {
+      fill: #EF2961;
+    }
+  }
 }
 
-.center-icon {
-  margin: auto;
-  width: 30%;
-  text-align: center;
+
+.wp-post-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1550px) {
+  .wp-post-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .wp-post-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .wp-post-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .wp-post-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.btn-nav {
+  border: 1px solid rgba(255, 255, 255, .55);
+  background-color: transparent;
+  padding: .375rem .75rem;
+  color: rgba(255, 255, 255, .55);
+}
+
+.btn-nav:hover {
+  border: 1px solid #EF2961;
+  color: #EF2961;
+}
+
+.input-nav {
+  border: 1px solid rgba(255, 255, 255, .55);
+  background-color: transparent;
+  padding: .375rem .75rem;
+  color: rgba(255, 255, 255, .55);
+}
+
+.middle {
+  width: 33%;
+}
+
+.form-right {
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.pink {
+  color: #EF2961;
+}
+
+.marge-20 {
+  margin: 20px 20px;
 }
