@@ -58,7 +58,7 @@ nav {
       height: 1px;
     }
 
-    &.hover:after {
+    &:hover:after {
       width: 100%;
     }
   }
