@@ -68,6 +68,21 @@
     add_filter('nav_menu_css_class', 'my_theme_menu_class');
     add_filter('nav_menu_link_attributes', 'my_theme_link_class');
 
+    // return un modules par son ID
+    add_action('rest_api_init', function (){
+        register_rest_route('my_theme/v1', '/module/(?P<id>\d+)', [
+            'methods' => 'GET',
+            'callback' => function (WP_REST_Request $request){
+                $postID = (int)$request->get_param('id');
+                $post = get_post($postID);
+                if ($post === null){
+                    return new WP_Error('Rien', 'Rien trouvé', ['status' =>404]);
+                }
+                return $post->post_title;
+            }
+        ]);
+    });
+
 
 
     function wordpress_scripts_loader()

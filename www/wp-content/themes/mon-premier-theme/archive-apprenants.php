@@ -8,12 +8,12 @@
         ?>
     </div>
 
-    <div class="container pt-2">
+    <div class="container">
 
-        <h1 class="has-text-align-center">Apprenants</h1>
+        <h1 class="has-text-align-center pink">Apprenants</h1>
 
         <?php if (have_posts()) : ?>
-            <div class="row">
+            <div class="row mt-5">
                 <?php while (have_posts()) : the_post(); ?>
                     <div class="col-sm-3 mb-4 d-flex justify-content-center">
                         <div class="flip-card">
@@ -21,8 +21,12 @@
                                 <div class="flip-card-front">
                                     <?php the_post_thumbnail('apprenants'); ?>
                                 </div>
-                                <div class="flip-card-back">
-                                    <?php the_title(); ?>
+                                <div class="flip-card-back pt-5">
+                                    <h1>
+                                        <Strong>
+                                            <?php the_title(); ?>
+                                        </Strong>
+                                    </h1>
                                     <?php the_content(); ?>
                                 </div>
                             </div>

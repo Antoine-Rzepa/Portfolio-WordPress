@@ -8,12 +8,12 @@
         ?>
     </div>
 
-    <div class="container pt-2">
+    <div class="container">
 
-        <h1 class="has-text-align-center">Modules</h1>
+        <h1 class="has-text-align-center pink">Modules</h1>
 
         <?php if (have_posts()) : ?>
-            <div class="row">
+            <div class="row mt-5">
                 <?php while (have_posts()) : the_post(); ?>
                     <div class="col-sm-4 mb-4">
                         <div class="card">
