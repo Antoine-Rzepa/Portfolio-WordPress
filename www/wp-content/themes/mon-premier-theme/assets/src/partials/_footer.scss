@@ -1,0 +1,27 @@
+.footer {
+  background: #262626;
+
+  .nav-footer {
+    a {
+      color: rgba(255, 255, 255, .55);
+
+      &:hover {
+        color: #EF2961;
+      }
+    }
+  }
+
+  .center-icon {
+    margin: 0 auto;
+    width: 30%;
+    text-align: center;
+  }
+
+  svg {
+    fill: white;
+
+    &:hover {
+      fill: #EF2961;
+    }
+  }
+}

@@ -14,6 +14,7 @@
 
         add_image_size('card-header', 500, 350, true);
         add_image_size('home-header', 1140, 600, true);
+        add_image_size('apprenants', 225, 300, true);
     }
 
     function my_theme_register_assets (){
