@@ -18,7 +18,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="middle">
-                <a class="navbar-brand" href="https://www.wordpress.test/">
+                <a class="navbar-brand" href="https://etu-4.le-campus-numerique.web-74.com/">
                     <img src="https://www.oxiwiz.fr/thumbs/logo-campus-numerique.webp" alt="Logo">
                 </a>
             </div>

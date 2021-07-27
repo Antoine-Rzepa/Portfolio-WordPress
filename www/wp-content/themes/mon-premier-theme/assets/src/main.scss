@@ -2,7 +2,33 @@
 @import "partials/footer";
 @import "partials/flip-card";
 
+.contact-background {
+  padding: 30px;
+  color: rgba(255, 255, 255, .55);
+  background-color: #262626;
+  border-radius: 10px;
 
+  &:hover {
+    color: #EF2961;
+  }
+}
+
+.wpcf7-textarea {
+  width: 322px;
+}
+
+.wpcf7-form {
+  p {
+    display: flex;
+    justify-content: center;
+  }
+
+  .wpcf7-submit:hover {
+    background-color: #EF2961;
+    border-color: #EF2961;
+    color: #212529;
+  }
+}
 
 
 html {
@@ -22,10 +48,11 @@ html {
       background-color: #212529;
       border-color: #212529;
       color: white;
+
       &:hover {
-      background-color: #EF2961;
-      border-color: #EF2961;
-      color: #212529;
+        background-color: #EF2961;
+        border-color: #EF2961;
+        color: #212529;
       }
     }
 

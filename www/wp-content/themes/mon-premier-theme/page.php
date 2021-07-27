@@ -8,7 +8,7 @@
     ?>
 </div>
 
-<div class="container">
+<div class="container mb-5">
     <h1 class="has-text-align-center pink mb-5"><?php the_title(); ?></h1>
     <div class="mb-4">
         <?php the_content(); ?>

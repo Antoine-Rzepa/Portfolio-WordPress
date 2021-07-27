@@ -8,7 +8,7 @@
         ?>
     </div>
 
-    <div class="container">
+    <div class="container mb-5">
 
         <h1 class="has-text-align-center pink">Apprenants</h1>
 

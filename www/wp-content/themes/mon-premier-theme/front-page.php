@@ -4,14 +4,14 @@
 
     <div class="container-front-page">
 
-        <div class="container">
+        <div class="container mb-4">
 
             <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>
                     <?php the_content(); ?>
 
                     <hr>
-                    <h2 class="has-text-align-center mb-4">Exemple de modules</h2>
+                    <h2 class="has-text-align-center mb-5 mt-5">Exemple de modules</h2>
 
                     <div class="row">
                         <?php
@@ -26,6 +26,7 @@
                             <div class="col-sm-4 mb-4">
                                 <div class="card">
                                     <?php the_post_thumbnail('card-header', ['class' => 'card-img-top', 'alt' => '', 'style' => 'height: auto;']); ?>
+                                    <hr class="mt-0 mb-0">
                                     <div class="card-body">
                                         <h5 class="card-title has-text-align-center"><?= get_the_title() ?></h5>
                                         <?php if (get_field('numero_du_module')) : ?>

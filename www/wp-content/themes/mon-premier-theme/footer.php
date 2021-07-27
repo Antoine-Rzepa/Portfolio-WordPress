@@ -1,5 +1,5 @@
 
-<div class="footer">
+<div class="footer pb-4">
     <?php wp_nav_menu([
         'theme_location' => 'footer',
         'container' => false,
