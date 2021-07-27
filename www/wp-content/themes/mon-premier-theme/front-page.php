@@ -35,8 +35,7 @@
                                                 <?= get_field('laps_de_temps'); ?>)
                                             </p>
                                             <a href="<?php the_permalink() ?>"
-                                               class="btn btn-dark d-flex justify-content-center">Voir
-                                                plus</a>
+                                               class="btn d-flex justify-content-center btn-pink">Voir plus</a>
                                         <?php endif; ?>
                                     </div>
                                 </div>

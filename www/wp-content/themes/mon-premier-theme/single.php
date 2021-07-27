@@ -11,9 +11,11 @@
     <div class="container">
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
-                <h1 class="has-text-align-center"><?php the_title() ?></h1>
                 <?php the_post_thumbnail('large', ['class' => 'card-img-top', 'alt' => '', 'style' => 'height: auto;']); ?>
-                <p class="has-text-align-center"><?php the_content(); ?></p>
+                <div class="container" style="padding-left: 50px; padding-right: 50px">
+                    <h1 class="has-text-align-center pt-4"><?php the_title() ?></h1>
+                    <p class="has-text-align-center"><?php the_content(); ?></p>
+                </div>
             <?php endwhile ?>
         <?php endif; ?>
     </div>

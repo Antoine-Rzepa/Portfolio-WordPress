@@ -18,6 +18,7 @@
                     <div class="col-sm-4 mb-4">
                         <div class="card">
                             <?php the_post_thumbnail('card-header', ['class' => 'card-img-top', 'alt' => '', 'style' => 'height: auto;']); ?>
+                            <hr class="mt-0 mb-0">
                             <div class="card-body">
                                 <h5 class="card-title has-text-align-center"><?= get_the_title() ?></h5>
                                 <?php if (get_field('numero_du_module')) : ?>
@@ -27,7 +28,7 @@
                                         <?= get_field('laps_de_temps'); ?>)
                                     </p>
                                     <a href="<?php the_permalink() ?>"
-                                       class="btn btn-dark d-flex justify-content-center">Voir
+                                       class="btn btn-pink d-flex justify-content-center">Voir
                                         plus</a>
                                 <?php endif; ?>
                             </div>

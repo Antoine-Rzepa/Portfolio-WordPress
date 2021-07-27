@@ -13,7 +13,7 @@
         register_nav_menu('footer', 'bas de page');
 
         add_image_size('card-header', 500, 350, true);
-        add_image_size('home-header', 1140, 600, true);
+        add_image_size('home-header', 1900, 600, true);
         add_image_size('apprenants', 225, 300, true);
     }
 
